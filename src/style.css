@@ -1,0 +1,76 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.form-control::placeholder {
+  text-align: center;
+  font-weight: 700; 
+
+}
+
+#app{
+  width: 100vw;  
+  height: 110vh; 
+  overflow: hidden; 
+ }
+
+.contain-central{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* estilos del sidebar */
+.transition {
+  transition: all 0.5s ease;
+}
+.sidebar {
+  transform: translateX(100%); /* Inicialmente oculto */
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Cuando tiene la clase 'open', se muestra */
+}
+
+/* Tablets (768px - 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .contain-central {
+    max-width: 90%; 
+    padding: 1.5rem;
+  }
+}
+
+/* Móviles (<767px) */
+@media (max-width: 767px) {
+  .contain-central {
+    max-width: 100%;  
+    padding: 1rem;
+    text-align: left; 
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+      max-width: 50%;
+  }
+}
