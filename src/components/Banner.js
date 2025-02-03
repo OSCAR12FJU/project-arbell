@@ -8,8 +8,6 @@ import {ArrowLeftIcon} from '../../public/icons/ArrowLeftIcon.js';
 import {ArrowRightIcon} from '../../public/icons/ArrowRightIcon.js';
 
 
-
-
 const Banner = () =>{
     const imgDestock = [
         imgBanner1,
@@ -28,7 +26,6 @@ const Banner = () =>{
     //Seccion del banner
     const sectionBanner = document.createElement('section');
     sectionBanner.className = "position-relative d-flex align-items-center  justify-content-center"
-    sectionBanner.style.backgroundImage = `url(${imgDestock[currentIndex]})`;
     sectionBanner.style.backgroundSize= "cover";
     sectionBanner.style.backgroundPosition= "center";
     sectionBanner.style.backgroundRepeat= "no-repeat";
